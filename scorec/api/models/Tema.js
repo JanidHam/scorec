@@ -22,6 +22,10 @@ module.exports = {
 			required: true,
 			columnName: 'nombre'
 		},
+		ponencias: {
+			collection: 'Ponencia',
+			via: 'tema'
+		}
 
 
 	}

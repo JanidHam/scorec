@@ -27,9 +27,11 @@ module.exports = {
 			size: 80,
 			required: true,
 			columnName: 'empresa'
+		},
+		ponencias: {
+			collection: 'Ponencia',
+			via: 'ponente'
 		}
-
-
 	}
 };
 
