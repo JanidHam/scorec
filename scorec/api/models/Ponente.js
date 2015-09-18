@@ -6,7 +6,10 @@
 */
 
 module.exports = {
+	schema: true,
+
 	tableName: 'ponentes',
+	
 	attributes: {
 		idPonente: {
 			type: 'integer',

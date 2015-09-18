@@ -6,7 +6,10 @@
 */
 
 module.exports = {
+	schema: true,
+
 	tableName: 'asistentes',
+	
   	attributes: {
   		idAsistente: {
 	  		type: 'integer',
