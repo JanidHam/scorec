@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,13 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  'get /asistentes/add': {
+    view: 'asistentes/asistente_form'
+  },
+
+  'post /asistentes/add': 'AsistenteController.asistenteCreate',
+  
+  'get /asistentes': 'AsistenteController.asistenteList'
 
 };

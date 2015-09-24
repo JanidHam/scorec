@@ -15,7 +15,6 @@ module.exports = {
 	  		type: 'integer',
 	  		autoIncrement: true,
 	  		primaryKey: true,
-	  		required: true,
 	  		unique: true,
 	  		columnName: 'id_asistente'
 	  	},
@@ -24,16 +23,17 @@ module.exports = {
 	  		size: 40,
 	  		required: true,
 	  		columnName: 'apellidos'
+
 	  	},
 	  	nombre: {
 	  		type: 'string',
 	  		size: 40,
 	  		required: true,
-	  		columnName: 'apellidos'
+	  		columnName: 'nombre'
 	  	},
 	  	telefono: {
 	  		type: 'string',
-	  		size: 10,
+	  		size: 15,
 	  		columnName: 'telefono'
 	  	},
 	  	email: {
@@ -42,7 +42,7 @@ module.exports = {
 	  		columnName: 'email'
 	  	},
 	  	direccion: {
-	  		type: 'strig',
+	  		type: 'string',
 	  		size: 100,
 	  		columnName: 'direccion'
 	  	},
@@ -57,6 +57,14 @@ module.exports = {
 	  		columnName: 'num_asistencias'
 	  	}
 
+  	},
+
+  	beforeCreate: function (values, cb) {
+  		values.nombre = values.nombre.toUpperCase();
+  		values.apellidos = values.apellidos.toUpperCase();
+  		values.email = values.email.toLowerCase();
+  		values.direccion = values.direccion.toUpperCase();
+  		cb();
   	}
 };
 

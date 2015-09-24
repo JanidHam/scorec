@@ -15,6 +15,7 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'bootstrap/css/bootstrap.min.css',
   'styles/**/*.css'
 ];
 
@@ -28,10 +29,20 @@ var jsFilesToInject = [
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
+  'bootstrap/js/bootstrap.min.js',
+  'plugins/fastclick/fastclick.min.js',
+  'js/app.min.js'
+  /*
+  'plugins/sparkline/jquery.sparkline.min.js',
+  'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
+  'plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
+  'plugins/slimScroll/jquery.slimscroll.min.js',
+  'plugins/chartjs/Chart.min.js',
+  */
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  //'js/**/*.js'
 ];
 
 
