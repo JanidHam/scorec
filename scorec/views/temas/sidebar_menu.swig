@@ -5,7 +5,7 @@
       <i class="fa fa-users"></i> <span>Asistentes</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-      <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Agregar asistentes</a></li>
+      <li><a href="index.html"><i class="fa fa-circle-o"></i> Agregar asistentes</a></li>
       <li><a href="index2.html"><i class="fa fa-circle-o"></i> Lista de asistentes</a></li>
     </ul>
   </li>
@@ -23,7 +23,7 @@
       <i class="fa fa-book"></i> <span>Temas</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-      <li><a href="index.html"><i class="fa fa-circle-o"></i> Agregar temas</a></li>
+      <li class="active"><a href="/temas/agregar"><i class="fa fa-circle-o"></i> Agregar temas</a></li>
       <li><a href="index2.html"><i class="fa fa-circle-o"></i> Lista de asistentes</a></li>
     </ul>
   </li>

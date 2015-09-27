@@ -52,6 +52,15 @@ module.exports.routes = {
 
   'post /asistentes/add': 'AsistenteController.asistenteCreate',
   
-  'get /asistentes': 'AsistenteController.asistenteList'
+  'get /asistentes': 'AsistenteController.asistenteList',
 
+  //////////
+  //TEMAS //
+  //////////
+  'GET /temas/agregar': {
+    view: 'temas/temas_form'
+  },
+  
+  'POST /tema/add': 'TemaController.createTema',
+  
 };

@@ -11,26 +11,20 @@ module.exports = {
 	tableName: 'temas',
 	
 	attributes: {
-		idTema: {
-			type: 'integer',
-	  		autoIncrement: true,
-	  		primaryKey: true,
-	  		required: true,
-	  		unique: true,
-	  		columnName: 'id_tema'
-		},
-		nombre: {
+		name: {
 			type: 'string',
 			size: 150,
 			required: true,
-			columnName: 'nombre'
+			columnName: 'name'
+		},
+		description: {
+			type: 'text',
+			columnName: 'description'
 		},
 		ponencias: {
 			collection: 'Ponencia',
 			via: 'tema'
 		}
-
-
 	}
 };
 
