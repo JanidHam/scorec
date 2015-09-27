@@ -27,6 +27,11 @@ module.exports = {
 			collection: 'Ponencia',
 			via: 'ponente'
 		}
-	}
+	},
+
+	afterCreate: function(ponente, next) {
+	    sails.io.sockets.emit('new ponente', ponente);
+	    next();
+  	}
 };
 

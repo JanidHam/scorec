@@ -11,42 +11,34 @@ module.exports = {
 	tableName: 'ponencias',
 	
 	attributes: {
-		idPonencia: {
-			type: 'integer',
-	  		autoIncrement: true,
-	  		primaryKey: true,
-	  		required: true,
-	  		unique: true,
-	  		columnName: 'id_ponencia'
-		},
 		aula: {
 			type: 'string',
 			size: 8,
 			required: true,
 			columnName: 'aula'
 		},
-		fecha: {
+		date: {
 			type: 'date',
 			required: true,
 			columnName: 'fecha'
 		},
-		horaInicio: {
-			type: 'time',
+		startHour: {
+			type: 'string',
 			required: true,
 			columnName: 'hora_inicio'
 		},
-		horaFin: {
-			type: 'time',
+		endHour: {
+			type: 'string',
 			required: true,
 			columnName: 'hora_fin'
 		},
-		minsRetardo: {
+		minLate: {
 			type: 'integer',
 			size: 3,
 			required: true,
 			columnName: 'mins_retardo'
 		},
-		minsFalta: {
+		minFault: {
 			type: 'integer',
 			size: 3,
 			required: true,

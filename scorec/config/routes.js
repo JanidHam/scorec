@@ -72,4 +72,14 @@ module.exports.routes = {
 
   'POST /ponentes/add': 'PonenteController.createPonente',
 
+  //////////////
+  //PONENCIAS //
+  //////////////
+  'GET /ponencias/agregar': {
+    controller: 'PonenciaController',
+    action: 'viewCreatePonencia'
+  },
+
+  'POST /ponencias/add': 'PonenciaController.createPonencia'
+
 };

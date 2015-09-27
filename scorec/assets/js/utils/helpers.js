@@ -18,6 +18,10 @@ class Helpers {
 		$('#messages').empty()
 	}
 
+	static isNumber(value) {
+		return /^\d+$/.test(value)
+	}
+
 	static sendDataToServer(url, data, succesFunction) {
 		$.post(url, data , succesFunction )
 	    .fail( (xhr, status) => {

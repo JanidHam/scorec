@@ -25,6 +25,11 @@ module.exports = {
 			collection: 'Ponencia',
 			via: 'tema'
 		}
-	}
+	},
+
+	afterCreate: function(tema, next) {
+	    sails.io.sockets.emit('new tema', tema);
+	    next();
+  	}
 };
 
