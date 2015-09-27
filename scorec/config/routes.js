@@ -63,4 +63,13 @@ module.exports.routes = {
   
   'POST /tema/add': 'TemaController.createTema',
   
+  /////////////
+  //PONENTES //
+  /////////////
+  'GET /ponentes/agregar': {
+    view: 'ponentes/ponentes_form'
+  },
+
+  'POST /ponentes/add': 'PonenteController.createPonente',
+
 };

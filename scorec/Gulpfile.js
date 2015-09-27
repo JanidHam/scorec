@@ -9,7 +9,7 @@ var buffer     = require('vinyl-buffer')
 //navegador
 gulp.task('build', function() {  
   browserify({
-    entries: 'assets/js/tema/es6/index.js',
+    entries: 'assets/js/ponentes/es6/index.js',
     extensions: ['.js'],
     debug: true
   })
@@ -18,11 +18,11 @@ gulp.task('build', function() {
   .pipe(source('index.min.js'))
   .pipe(buffer())
   //.pipe(uglify())
-  .pipe(gulp.dest('assets/js/tema/dist/'))
+  .pipe(gulp.dest('assets/js/ponentes/dist/'))
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['assets/js/tema/es6/*.js', 'assets/js/utils/*.js'], ['build'])
+    gulp.watch(['assets/js/ponentes/es6/*.js', 'assets/js/utils/*.js'], ['build'])
 })
 
 gulp.task('default', ['watch']);

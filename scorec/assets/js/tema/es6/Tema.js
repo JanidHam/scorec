@@ -44,7 +44,6 @@ class Tema {
 	}
 
 	_validResponse(response) {
-		console.log(this)
 		if (response.message === 'ok') {
 			Helpers.drawMessage('success', this._SUCCESS_SAVE)
 			this._cleanFields()

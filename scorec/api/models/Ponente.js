@@ -11,21 +11,13 @@ module.exports = {
 	tableName: 'ponentes',
 	
 	attributes: {
-		idPonente: {
-			type: 'integer',
-	  		autoIncrement: true,
-	  		primaryKey: true,
-	  		required: true,
-	  		unique: true,
-	  		columnName: 'id_ponente'
-		},
-		nombre: {
+		name: {
 			type: 'string',
 			size: 80,
 			required: true,
 			columnName: 'nombre'
 		},
-		empresa: {
+		company: {
 			type: 'string',
 			size: 80,
 			required: true,
