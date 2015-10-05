@@ -4,6 +4,7 @@
  * @description :: Server-side logic for managing asistentes
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
+helpers = require('../utils/helpers')
 
 module.exports = {
 	asistenteList: function (req, res) {
@@ -29,8 +30,8 @@ module.exports = {
 			}
 			else
 			{
-				return res.redirect('/asistentes');
-
+				res.statusCode = 201
+		    	return res.json(helpers.jsonfy('ok', values));
 			}
 		});
 	}

@@ -38,7 +38,6 @@ module.exports = {
 	  	},
 	  	email: {
 	  		type: 'email',
-	  		unique: true,
 	  		columnName: 'email'
 	  	},
 	  	direccion: {
@@ -62,8 +61,10 @@ module.exports = {
   	beforeCreate: function (values, cb) {
   		values.nombre = values.nombre.toUpperCase();
   		values.apellidos = values.apellidos.toUpperCase();
-  		values.email = values.email.toLowerCase();
-  		values.direccion = values.direccion.toUpperCase();
+  		if (values.direccion)
+  		{
+  			values.direccion = values.direccion.toUpperCase();	
+  		}
   		cb();
   	}
 };

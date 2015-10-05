@@ -66,7 +66,7 @@
 	        </div><!-- /.box-body -->
 
 	        <div class="box-footer">
-	          <button type="submit" class="btn btn-primary">Submit</button>
+	          <button id="id_button_guardar" name="button_guardar" type="submit" class="btn btn-primary">Guardar</button>
 	        </div>
 	      </form>
 	    </div><!-- /.box -->
@@ -77,6 +77,7 @@
 {% endblock main_content %}
 
 {% block scripts %}
+	<script src="/js/asistentes/dist/index.min.js"></script>
 	<!-- InputMask -->
 	<script src="/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
 	<script src="/plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
